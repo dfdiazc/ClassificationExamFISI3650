@@ -64,15 +64,15 @@ class Model():
         ])
         
         model.compile(
-            optimizer='adam',
-            loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False),
-            metrics=['accuracy']
+            optimizer = 'adam',
+            loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=False),
+            metrics = ['accuracy']
         )
         
         model.fit(
             train_ds,
-            validation_data=val_ds,
-            epochs=10
+            validation_data = val_ds,
+            epochs = 10
         )
         
         model.save('model.h5')
