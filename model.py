@@ -7,8 +7,8 @@ class Model():
     def __init__(self):
         self.model = tf.keras.models.load_model('model.h5')
         
-    def predict(self, path):
-        img = tf.keras.preprocessing.image.load_img(path, target_size=(50, 50))
+    def predict(self, file_path):
+        img = tf.keras.preprocessing.image.load_img(file_path, target_size=(50, 50))
         img_array = tf.keras.preprocessing.image.img_to_array(img)
         img_array = tf.expand_dims(img_array, 0)
         
