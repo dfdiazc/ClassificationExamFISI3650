@@ -51,11 +51,11 @@ class Model():
         
         model = tf.keras.Sequential([
             tf.keras.layers.Rescaling(1./255),
-            tf.keras.layers.Conv2D(16, 3, padding='same', activation='relu'),
-            tf.keras.layers.MaxPooling2D(),
             tf.keras.layers.Conv2D(32, 3, padding='same', activation='relu'),
             tf.keras.layers.MaxPooling2D(),
             tf.keras.layers.Conv2D(64, 3, padding='same', activation='relu'),
+            tf.keras.layers.MaxPooling2D(),
+            tf.keras.layers.Conv2D(128, 3, padding='same', activation='relu'),
             tf.keras.layers.MaxPooling2D(),
             tf.keras.layers.Dropout(0.2),
             tf.keras.layers.Flatten(),
