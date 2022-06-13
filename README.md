@@ -4,7 +4,7 @@ This repository contains a solution to the classification exam for the entrepren
 
 ## Objetives and Dataset
 
-The project aims to obtain a model that can accurately classify different types of rice based on an image. To do this, the provided dataset contains 50000 images of 5 different varieties of rice: arborio, basmati, ipsala, jasmine, and karacadag. An additional 10000 images are provided for validation. The model will be implemented in Python, using the **Keras** API from the **Tensorflow** library.
+The project aims to obtain a model, a convolutional neural network in this case, that can accurately classify different types of rice based on an image. To do this, the provided dataset contains 50000 images of 5 different varieties of rice: arborio, basmati, ipsala, jasmine, and karacadag. An additional 10000 images are provided for validation. The model will be implemented in Python, using the **Keras** API from the **Tensorflow** library.
 
 ## The model
 
