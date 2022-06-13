@@ -14,4 +14,4 @@ Having defined the model, the Adam optimizer is chosen and a Cross Entropy funct
 
 ## Results
 
-Using the obtained model it is possile now to run the *eval.py* file, obtaining a 96.69% accuracy for the **Test** data.
+Using the obtained model it is possile now to run the *eval.py* file, obtaining a 96.82% accuracy for the **Test** data.
